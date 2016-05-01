@@ -1,5 +1,5 @@
 # Express Path
-Ejemplos sencillos para iniciar con Express.js
+Easy examples to start with Express.js
 
 ### Installation
 ```

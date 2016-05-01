@@ -14,15 +14,15 @@ Las funciones de middleware pueden realizar las siguientes tareas:
   - Invocar el siguiente middleware en la pila.
 
 
-- Para saber cuando termina una peticion debemos usar EventsListnners , el evento finish se activa cuando el SO termina
+  Para saber cuando termina una petición debemos usar EventsListenners , el evento finish se activa cuando el SO termina
   de manejar la peticion y se hace un callback() de manera asincrona.
 
 ### Ejemplo de un middleware Logger.js
 
-Esta función interceptara todas las peticiones y mostrará su duración
+Esta función interceptará todas las peticiones y mostrará su duración
 
 
-```
+```js
 module.exports = function(request , response , next ){
 
 	var start = +new Date();
@@ -44,10 +44,10 @@ module.exports = function(request , response , next ){
 }
 ```
 
-El middleware se invoca en la aplicacion (app.js) de la siguiente forma
+El middleware se invoca en la aplicación (app.js) de la siguiente forma
 
 
-```
+```js
  var logger = require('./logger');
  app.use(logger);
 
@@ -58,7 +58,7 @@ El middleware se invoca en la aplicacion (app.js) de la siguiente forma
 Es un middleware que trae express que permite cargar directorios en la aplicación,
 sí tenemos nuestro lado del cliente en una carpeta se puede cargar con este middleware
 
-```
+```js
 app.use(express.static('public'));
 
 ```

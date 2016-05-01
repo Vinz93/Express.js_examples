@@ -5,7 +5,7 @@
 
 request.query.name gives you the value of the query string parameter of name.
 
-```
+```js
 localhost:3000/blocks?limit=2
 
 var limit = request.query.limit ;
@@ -21,7 +21,7 @@ limit = 2
 so request.paramas.name give the value of the paramater on the url.
 
 
-```
+```js
 app.get('/blocks2/:name' , function(req, res){
 
 	var description = blocks2[req.params.name];
@@ -41,7 +41,7 @@ Example:
 
 Normalizing request
 
-```
+```js
 app.param('name', function(req, res , next){
 	var name = req.params.name;
 	var block = name.slice(0,1).toUpperCase() + name.slice(1).toLowerCase();
@@ -51,7 +51,7 @@ app.param('name', function(req, res , next){
 });
 ```
 now blockName is new property on the request
-```
+```js
 app.get('/locations/:name', function(req, res){
 	var description = blocks2[req.blockName];
 	if(!description){

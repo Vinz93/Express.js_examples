@@ -33,16 +33,16 @@ var express = require('express');
 
 		HOW TO RUN THE APP ?
 
-		> node app.js
+		$ node app.js
 
 		HOW I TEST THE APP?
 
-		> curl http://localhost:3000/
+		$ curl http://localhost:3000/
 
 
 		CURL CAN PRINT THE HEADERs OF THE RESPONSE
 
-		> curl -i http://localhost:3000/blocks
+		$ curl -i http://localhost:3000/blocks
 
 
 

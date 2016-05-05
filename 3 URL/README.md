@@ -15,7 +15,7 @@ limit = 2
 ```
 
 
-##  URL path  (Dynamic Routes)
+###  URL path  (Dynamic Routes)
 
 '/blocks2/:name' creates name property on the request.params object
 so request.paramas.name give the value of the paramater on the url.
@@ -33,7 +33,7 @@ app.get('/blocks2/:name' , function(req, res){
 
 });
 ```
-##  preconditions (app.param)
+###  Preconditions (app.param)
 app.param is use for preconditions we can use the params of the request
 and create new objects on the request
 

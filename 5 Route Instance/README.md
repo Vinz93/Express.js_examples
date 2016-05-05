@@ -4,7 +4,7 @@
 ### Router
 
 express.Router();
-allows wrap ower Blocks logic in a single file , its important to module.exports = router;
+allows wrap our Blocks logic in a single file , its important to module.exports = router;
 
 ```js
 var router = express.Router();
